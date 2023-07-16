@@ -1,0 +1,6 @@
+- controllare che chiave esterna abbia stesse DIMENSIONI E TIPO di chiave primaria; 
+- i numeri decimali vanno inseriti con il PUNTO
+- Chiave primaria: andare vicino a Elimina su Più - chiave primaria
+-	Chiavi esterne: dopo aver creato la tabella con anche colonna chiave esterna (già nel testo) vado su struttura/vista relazioni: 
+  nome della colonna FK e poi altra tabella e colonna di riferimento 
+  es. cod_cliente è una chiave esterna di Spettacoli quindi metto FK cod_cliente di tabella Clienti per colonna cod_cliente (chiave primaria)

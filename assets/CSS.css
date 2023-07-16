@@ -1,0 +1,211 @@
+.background{
+    background-image: url("../teatro1.jpg");
+    
+}
+.card-body{
+    background-color: rgb(220, 142, 218);
+}
+
+.card_style{
+    display: flex;
+    text-align: center;
+    align-content: space-between;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+.form-main {
+  background: linear-gradient(to bottom, #00000024, #00000024),
+    url(https://images.pexels.com/photos/6443068/pexels-photo-6443068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+      no-repeat center;
+  background-size: cover;
+height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+  flex: 1;
+  .main-wrapper {
+/*   flex:1; */
+    overflow: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 45px;
+    width: 50%;
+    max-height: auto;
+    height:auto;
+    max-width: 600px;
+    box-shadow: 0 0 5px 5px #00000020;
+    backdrop-filter: blur(5px);
+    background-color: #ffffff85;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      padding: 24px;
+    }
+     @media screen and (max-width: 767px) {
+      
+       max-height: auto;
+      
+    }
+    .form-head {
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 600;
+      text-align: center;
+      margin: 0px 0 25px;
+      color: #454545;
+    }
+    .form-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+      .form-card {
+        position: relative;
+        width: 100%;
+
+        .form-input {
+          padding: 20px 25px 15px;
+          width: 100%;
+          border: 1px solid #333;
+          border-radius: 5px;
+          background: transparent;
+          outline: none;
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 400;
+              box-sizing: border-box;
+
+          &:valid,
+          &:focus {
+            border: 1px solid grey;
+          }
+
+          &:valid ~ .form-label,
+          &:focus ~ .form-label {
+            color: grey;
+            top: 30%;
+            transform: translateY(-70%);
+            font-size: 13px;
+            line-height: 23px;
+          }
+
+          &:-webkit-autofill,
+          &:-webkit-autofill:hover,
+          &:-webkit-autofill:focus,
+          &:-webkit-autofill:active {
+            transition: background-color 9999s ease-in-out 0s;
+          }
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+        }
+
+        .form-label {
+          position: absolute;
+          left: 25px;
+          top: 50%;
+          transform: translateY(-50%);
+          pointer-events: none;
+          transition: 0.3s;
+          margin: 0;
+          font-size: 18px;
+          line-height: 28px;
+          font-weight: 500;
+        }
+        .form-textarea {
+          padding: 20px 25px 15px;
+          width: 100%;
+         border: 1px solid #333;
+          border-radius: 5px;
+          background: transparent;
+          outline: none;
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 400;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          resize: none;
+              box-sizing: border-box;
+
+          &:valid,
+          &:focus {
+            border: 1px solid grey;
+          }
+
+          &:valid ~ .form-textarea-label,
+          &:focus ~ .form-textarea-label {
+            color: gray;
+            top: 18%;
+            transform: translateY(-82%);
+            font-size: 13px;
+            line-height: 23px;
+          }
+
+          &:-webkit-autofill,
+          &:-webkit-autofill:hover,
+          &:-webkit-autofill:focus,
+          &:-webkit-autofill:active {
+            transition: background-color 9999s ease-in-out 0s;
+          }
+        }
+        .form-textarea-label {
+          position: absolute;
+          left: 25px;
+          top: 30%;
+          transform: translateY(-70%);
+          pointer-events: none;
+          transition: 0.3s;
+          margin: 0;
+          font-size: 18px;
+          line-height: 28px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+padding: 16px 0 0;
+  }
+.btn-wrap button {
+  padding: 0 32px;
+  font-size: 18px;
+  line-height: 48px;
+  background: #454545;
+  border: 2px solid transparent;
+  font-weight: 600;
+    color: #FFF;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+  cursor: pointer; box-shadow: 0 0 5px 5px #00000020;
+}
+.btn-wrap button:hover {
+  border: 2px solid #454545;
+  background: transparent;
+  color: #454545;
+  
+}
+
+
